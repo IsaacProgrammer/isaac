@@ -1,0 +1,252 @@
+@charset "UTF-8";
+html, body {
+    margin: 0;
+    padding: 0;
+} * {
+    box-sizing: border-box;
+} 
+/* menu/cabeçalho */
+header.flex-container {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div.menu_nav {
+    display: flex;
+} div.menu_nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
+    transition: background 1s;
+} div.menu_nav a:hover {
+    background: #1565c0;
+} 
+/* CAPA */
+section.capa {
+    background-image: url("../_imagens/img/sea-bg1.jpg");
+    min-height: 100vh;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} section.capa h1 {
+    font-size: 70px;
+    max-width: 500px;
+    text-shadow: 3px 3px black;
+    margin-bottom: 0;
+} section.capa h2 {
+    max-width: 500px;
+    font-size: 30px;
+    margin: 0;
+    border-top: solid 1px white;
+} section.capa a.botao {
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+} section.capa a.botao:hover {
+    background-color: #01acea;
+    border: 0px;
+} section.projeto {
+    display: flex;
+    width: 100%;
+    padding: 30px 0px 20px 0;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #f7f7f7;
+} div.video {
+    flex: 50px;
+    padding: 0px 50px;
+} div.video iframe {
+    width: 100%;
+
+} div.spbre-projeto {
+    flex: 50%;
+    padding: 0 50px;
+} div.sobre-projeto h1 {
+    font-size: 30px;
+    text-align: center;
+} div.sobre-projeto p {
+    text-align: justify;
+    line-height: 1.4;
+}
+
+.t-selecao {
+    text-align: center;
+}
+
+.selecao {
+    display: flex;
+    max-width: 100%;
+    padding: 30px 0px 20px 0px;
+
+    flex-wrap: wrap;
+} .card {
+    flex: 25%;
+    text-align: center;
+    padding: 0px 50px 0px  50px;
+} .img-selecao {
+    height: 85px;
+    width: 85px;
+    text-align: center;
+    margin: 0px auto;
+} .img-selecao img {
+    max-width: 100%
+} .img-selecao:hover {
+    background-color: lightblue;
+}
+
+.ecopontos {
+    max-width: 100%;
+    background-color: #f7f7f7;
+    padding: 30px 0px 20px 0px;
+}.ecopontos h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+} .ecopontos h2 {
+    text-align: center;
+    font-size: 16px;
+}
+.card-ecopontos { 
+    max-width: 400px;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 2px 7px 8px #777777;
+    flex: 30%;
+}
+.card-ecopontos img {
+    max-width: 100%;
+}
+.sobre {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px 0px 20px 0px;
+    background-color: #ffffff;
+}
+.sobre-mim {
+    flex: 50%;
+    padding: 0px 40px;
+} .foto {
+    flex: 50%;
+    padding: 0px 40px;
+
+}.foto img {
+    max-width: 100%;
+} .sobre-mim h1 {
+    text-align: center;
+    font-size: 30px;
+} .sobre-mim h4 {
+    text-align: center;
+} .sobre-mim p {
+    text-align: justify;
+    line-height: 1.6;
+}
+footer {
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px 0px 50px 0px;
+    background-color: #01acea;
+    color: white;
+
+}
+.creditos {
+    flex: 1;
+    padding: 0px 40px;
+
+}
+
+.creditos h1 {
+    text-align: center;
+    font-size: 30px;
+
+}
+.creditos p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* RESPONSIVIDAAAAAAADEEEE*/
+
+@media (max-width: 800px) {
+    /*Header*/
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+    .menu_nav { 
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: #1d1d1d;
+    }
+    .menu_nav a {
+        padding: 5px;
+        width: 100%;
+        text-align: center;
+        margin-top: 5px;
+    }
+    .capa {
+        min-height: 90vh;
+    }
+    .capa h1 {
+        font-size: 50px;
+        max-width: 100%;
+        text-shadow: 3px 4px 2px black;
+        margin-bottom: 0px;        
+    }
+    .capa h2 {
+        max-width: 100%;
+        font-size: 20px;
+        padding: 5px;
+        text-align: center;
+    }
+    .projeto {
+        flex-direction: column;
+    }
+    .sobre-projeto {
+        padding: 20px;
+
+    }
+    .video {
+        flex: 1;
+        padding: 0px 5px;
+        width: 100%
+    }
+    .video iframe {
+        width: 100%;
+        height: 230px;
+    }
+    .selecao {
+        flex-direction: column;
+
+    } 
+    .container-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sobre {
+        flex-direction: column;
+    }
+    .sobre-mim {
+        padding: 0px 5px;
+
+    }
+    footer {
+        flex-direction: column;
+    }
+}
